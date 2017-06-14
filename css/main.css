@@ -1,0 +1,160 @@
+body { font-family:Arial, Helvetica, Sans-Serif; font-size:1em; color:#000;}
+
+.calendar, .calendarPanel {
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none
+}
+
+.calendar {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.calendar tr.monthheader {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.calendar tr.divider {
+    height: 5px;
+}
+
+.calendar .monthHeader th {
+    font-size:2em;
+    border-spacing: 0 2em;
+}
+
+.calendar .weekHeader .weekday {
+    width: 1%;
+}
+
+.calendar .weekHeader th {
+    border: 1px black;
+    border-style: solid dashed;
+    background-color: #cccccc;
+}
+
+.calendar .weekheader th.selected {
+    background-color:lightblue;
+}
+
+.calendar .monthHeader .month {
+    
+}
+
+.calendar td.day{
+    border:1px solid black;
+    height:5rem;
+}
+
+.calendar tr.week td.day div.dateInfo{
+    position:relative;
+    height:100%;
+}
+
+.calendar tr.week td.day div.dateInfo div.date{
+    position:absolute;
+    top:0px;
+    left:0px;
+    color:black;
+}
+
+.calendar .week .dateInfo div.price{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    color:white;
+}
+
+.calendar td {
+    background-color:#e8e8e8;
+}
+
+.calendar td.otherMonth {
+    background-color:lightgrey;
+}
+
+.calendar td.selected {
+    background-color:lightblue;
+}
+
+.calendar td.selected.otherMonth {
+    background-color:#8eacff;
+}
+
+.calendar td.selected.datePassed{
+    background-color:#8eacff;
+}
+
+.calendar td.datePassed {
+    background-color:#777777;
+}
+
+.calendar td.booked {
+    background-color:pink;
+}
+
+.calendar td.booked.othermonth{
+    background-color:#ffd7ce;
+}
+
+.calendar td.booked.selected {
+    background-color:#8e6dba;
+}
+
+.calendar td.unavailable {
+    background-color:#e5cf7e;
+}
+
+.calendar td.unavailable.selected {
+    background-color:#99934c;
+}
+
+.calendar .adminNotes li {
+    color: red;
+}
+
+.calendar .memberNotes li {
+    color: blue;
+}
+
+.calendar .week .date {
+    font-weight: bold;
+}
+
+.calendarPanel div.notesPanel{
+    position: absolute;
+    width: 50%;
+    right: 0px;
+}
+
+.calendarPanel div.notesPanel div.notes{
+    overflow: scroll;
+    height: 12rem;
+}
+
+.calendarPanel div.notesPanel textarea.addNoteField{
+    width: 100%;
+    resize: none;
+}
+
+.calendarPanel div.notesPanel button.addNote {
+    position: absolute;
+    right: 0px;
+}
+
+.calendarPanel div.notes {
+    border:1px solid black;
+}
+
+.calendarPanel div.optionsPAnel{
+    position:absolute;
+    width:50%;
+}
+
+.calendar td.day.locked {
+    border: 2px solid red;
+}
