@@ -17,7 +17,7 @@
                 adminNotes: [],
                 memberNotes: []
             };
-
+<div>
     <ul>
     <lh>Selection</lh>
     <li>Can select days by clicking or dragging</li>
@@ -31,8 +31,9 @@
 
     <lh>Notes</lh>
     <li>Inputted note will be added to every selected day when "Add Note" is pressed</li>
-    <li>Locked days, or days in the past cannot be changed</li>
+    <li>Locked days, or days in the past cannot be changed</li>li
     </ul>
+</div>
 
 <b>$.get{Value}(myDate)</b>
 
