@@ -1,6 +1,5 @@
-<div><b>Calendar</b>
+<h1><a href="https://kylechua.github.io/calendar/">Demo</a></h1>
 
-</div>
 <div>
 
 <b>$.Calendar(myData, defaultData)</b>
