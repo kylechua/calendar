@@ -124,19 +124,18 @@ $.fn.Calendar = function(myData, defaults){
 
 // custom display -- gets the HTML to be displayed in the cell
     $.fn.addCustomDisplay = function(myDate){
-        var text = '<div class="dateInfo">'
-        var d = parseInt(myDate.substring(8));
 
-        text += '<div class="date"><p>' + d + '</p></div>'
+        $(this).append('<div class="dateInfo"></div');
+        var info = $(this).find('.dateInfo');
+
+        var d = parseInt(myDate.substring(8));
+        $(info).append('<div class="date"><p>' + d + '</p></div>')
 
         // add price
         var myData = data.get(myDate);
 
-        text += '<div class="price"><p>' + $(this).getPrice(myDate) + '</p></div>'
+        $(info).append('<div class="price"><p>' + $(this).getPrice(myDate) + '</p></div>')
 
-        text += '</div>'
-
-        $(this).append(text);
     }
 
     // retreives date data. if date does not exist in data, sets it w undefined values
