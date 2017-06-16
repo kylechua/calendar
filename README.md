@@ -19,17 +19,21 @@
             };
 <div>
     <ul>
-    <lh>Selection</lh>
+    <lh><b>Selection</b></lh>
     <li>Can select days by clicking or dragging</li>
     <li>Can select weekdays by clicking on the weekday in the header</li>
     <li>Can select all days of the month by clicking on the month header</li>
     <li>Days will only be unselected when clicking on the "Select None" button, or by clicking on a singularly selected day</li>
+    </ul>
 
-    <lh>Available/Unavailable</lh>
+    <ul>
+    <lh><b>Available/Unavailable</b></lh>
     <li>Selected dates can be set to available or unavailable</li>
     <li>Locked days, or days in the past cannot be changed</li>
+    </ul>
 
-    <lh>Notes</lh>
+    <ul>
+    <lh><b>Notes</b></lh>
     <li>Inputted note will be added to every selected day when "Add Note" is pressed</li>
     <li>Locked days, or days in the past cannot be changed</li>li
     </ul>
