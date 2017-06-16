@@ -25,6 +25,10 @@
 <h3><a href="https://kylechua.github.io/calendar/">Demo</a></h3>
 </div>
 
+</div>
+
+<h2>Functions</h2>
+
 <b>$.Calendar(myData, defaultData)</b>
 
     Initializes the calendar plugin with
