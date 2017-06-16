@@ -46,11 +46,11 @@
 
 <b>$.get{Value}(myDate)</b>
 
-    Returns the value of [Price, Blocked, Locked, Available, Booked, AdminNotes, MemberNotes] for the given date in ISO format. If date does not exist in data, returns default
+    Returns the value of [Price, Blocked, Locked, Available, Booked, AdminNotes, MemberNotes] for the given date in ISO format. If date does not exist in data, returns default. getDefaultPrice(anyDate) can also be called.
 
 <b>$.set{Value}(myDate, newValue)</b>
     
-    Sets the value of [Price, Blocked, Locked, Available, Booked, AdminNotes, MemberNotes] for the given date in ISO format
+    Sets the value of [Price, Blocked, Locked, Available, Booked, AdminNotes, MemberNotes] for the given date in ISO format. setDefaultPrice(newPrice) can also be called.
 
 <b>$.getData()</b>
     
