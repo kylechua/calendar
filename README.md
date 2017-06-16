@@ -1,4 +1,5 @@
 <div>
+<h3><a href="https://kylechua.github.io/calendar/">Demo</a></h3><br>
 <h2>Calendar Plugin</h2>
 
 <div>
@@ -21,8 +22,6 @@
 <li>Inputted note will be added to every selected day when "Add Note" is pressed</li>
 <li>Locked days, or days in the past cannot be changed</li>
 </ul>
-
-<h3><a href="https://kylechua.github.io/calendar/">Demo</a></h3>
 </div>
 
 </div>
