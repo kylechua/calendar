@@ -1,22 +1,6 @@
-<h1><a href="https://kylechua.github.io/calendar/">Demo</a></h1>
-
 <div>
+<h2>Calendar Plugin</h2>
 
-<b>$.Calendar(myData, defaultData)</b>
-
-    Initializes the calendar plugin with
-
-    myData is a Map(Key, Value) with Key = date in ISO format (e.g. "2017-05-15") and Value = an object literal with the format of defaultData
-
-    var defaultData = {
-                price: 0,
-                blocked: false,
-                locked: false,
-                available: true,
-                booked: false,
-                adminNotes: [],
-                memberNotes: []
-            };
 <div>
 <ul>
 <lh><b>Selection</b></lh>
@@ -37,7 +21,25 @@
 <li>Inputted note will be added to every selected day when "Add Note" is pressed</li>
 <li>Locked days, or days in the past cannot be changed</li>
 </ul>
+
+<h3><a href="https://kylechua.github.io/calendar/">Demo</a></h3>
 </div>
+
+<b>$.Calendar(myData, defaultData)</b>
+
+    Initializes the calendar plugin with
+
+    myData is a Map(Key, Value) with Key = date in ISO format (e.g. "2017-05-15") and Value = an object literal with the format of defaultData
+
+    var defaultData = {
+                price: 0,
+                blocked: false,
+                locked: false,
+                available: true,
+                booked: false,
+                adminNotes: [],
+                memberNotes: []
+            };
 
 <b>$.get{Value}(myDate)</b>
 
