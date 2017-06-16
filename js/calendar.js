@@ -1,26 +1,18 @@
 (function($){
 
 var data;
+var defaultData;
 var selectedDates = [];
 var shownDates = [];
 var currentSelection = false;
 var monthSelect = false;
 
-var defaultData = {
-                price: "No price",
-                blocked: false,
-                locked: false,
-                available: true,
-                booked: false,
-                adminNotes: [],
-                memberNotes: []
-            };
-
 // Create the calendar
-$.fn.Calendar = function(myData){
+$.fn.Calendar = function(myData, defaults){
 
     // set data
     data = myData;
+    defaultData = defaults
 
     options = {
         // months
@@ -830,54 +822,68 @@ $.fn.hidePanel = function(){
     $.fn.getPrice = function(myDate){
         if (data.get(myDate) != undefined)
             return data.get(myDate).price;
-        else
+        else {
+            console.warn("Date specified does not exist in data")
             return defaultData.price;
+        }
     }
 
-    $.fn.getGlobalPrice = function(){
+    $.fn.getDefaultPrice = function(){
         return defaultData.price;
     }
 
     $.fn.getLocked = function(myDate){
         if (data.get(myDate) != undefined)
             return data.get(myDate).locked;
-        else
-            return false;
+        else {
+            console.warn("Date specified does not exist in data")
+            return defaultData.locked;
+        }
     }
 
     $.fn.getBlocked = function(myDate){
         if (data.get(myDate) != undefined)
             return data.get(myDate).blocked;
-        else 
-            return false;
+        else {
+            console.warn("Date specified does not exist in data")
+            return defaultData.blocked;
+        }
     }
 
     $.fn.getBooked = function(myDate){
         if (data.get(myDate) != undefined)
             return data.get(myDate).booked;
-        else
-            return false;
+        else {
+            console.warn("Date specified does not exist in data")
+            return defaultData.booked;
+        }
     }
 
     $.fn.getAvailable = function(myDate){
         if (data.get(myDate) != undefined)
             return data.get(myDate).available;
-        else
-            return true;
+        else {
+            console.warn("Date specified does not exist in data")
+            return defaultData.available;
+        }
     }
 
     $.fn.getAdminNotes = function(myDate){
         if (data.get(myDate) != undefined)
             return data.get(myDate).adminNotes;
-        else
+        else{
+            console.warn("Date specified does not exist in data")
             return defaultData.adminNotes;
+        }
     }
 
     $.fn.getMemberNotes = function(myDate){
         if (data.get(myDate) != undefined)
             return data.get(myDate).memberNotes;
-        else
+        else{
+            console.warn("Date specified does not exist in data")
             return defaultData.memberNotes;
+        }
     }
 
 // SETTER FUNCTIONS
@@ -885,9 +891,8 @@ $.fn.hidePanel = function(){
     // returns undefined if the date is in the past
     $.fn.getDefaultData = function(myDate){
 
-        /*
+        
         var myData = {
-            date: myDate,
             price: defaultData.price,
             blocked: defaultData.blocked,
             locked: defaultData.locked,
@@ -896,8 +901,8 @@ $.fn.hidePanel = function(){
             adminNotes: defaultData.adminNotes,
             memberNotes: defaultData.memberNotes
         };
-        */
-
+        
+/*
         var myData = {
                 price: "No price",
                 blocked: false,
@@ -907,6 +912,7 @@ $.fn.hidePanel = function(){
                 adminNotes: [],
                 memberNotes: []
             };
+            */
 
         if (isPast(myDate)){
             return;
@@ -930,7 +936,7 @@ $.fn.hidePanel = function(){
         $(this).refreshCalendar();
     }
 
-    $.fn.setGlobalPrice = function(newPrice){
+    $.fn.setDefaultPrice = function(newPrice){
         defaultData.price = newPrice;
     }
 

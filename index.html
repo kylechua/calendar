@@ -8,12 +8,22 @@
     <script src="js/calendar.js"></script>
   </head>
 <body>
-<a href="https://kylechua.github.io/calendar/">Demo</a>
+<a href="https://github.com/kylechua/calendar">Link to repository</a>
 <div id='myCal'></div>
 </body>
 
 <!--<script>test()</script>-->
 <script>
+
+var defaults = {
+                price: 0,
+                blocked: false,
+                locked: false,
+                available: true,
+                booked: false,
+                adminNotes: [],
+                memberNotes: []
+            };
 
 var date1 = {
                 price: 100.0,
@@ -53,7 +63,7 @@ data1.set("2017-06-15", date2);
 data1.set("2017-07-07", date3);
 
 
-$('#myCal').Calendar(data1)
+$('#myCal').Calendar(data1, defaults)
 </script>
 
 </div>
