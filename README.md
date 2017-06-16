@@ -19,11 +19,11 @@
                 memberNotes: []
             };
 
-<b>$.get[Value](myDate)</b>
+<b>$.get{Value}(myDate)</b>
 
     Returns the value of [Price, Blocked, Locked, Available, Booked, AdminNotes, MemberNotes] for the given date in ISO format
 
-<b>$.set[Value](myDate, newValue)</b>
+<b>$.set{Value}(myDate, newValue)</b>
     
     Sets the value of [Price, Blocked, Locked, Available, Booked, AdminNotes, MemberNotes] for the given date in ISO format
 
