@@ -823,7 +823,6 @@ $.fn.hidePanel = function(){
         if (data.get(myDate) != undefined)
             return data.get(myDate).price;
         else {
-            console.warn("Date specified does not exist in data")
             return defaultData.price;
         }
     }
@@ -836,7 +835,6 @@ $.fn.hidePanel = function(){
         if (data.get(myDate) != undefined)
             return data.get(myDate).locked;
         else {
-            console.warn("Date specified does not exist in data")
             return defaultData.locked;
         }
     }
@@ -845,7 +843,6 @@ $.fn.hidePanel = function(){
         if (data.get(myDate) != undefined)
             return data.get(myDate).blocked;
         else {
-            console.warn("Date specified does not exist in data")
             return defaultData.blocked;
         }
     }
@@ -854,7 +851,6 @@ $.fn.hidePanel = function(){
         if (data.get(myDate) != undefined)
             return data.get(myDate).booked;
         else {
-            console.warn("Date specified does not exist in data")
             return defaultData.booked;
         }
     }
@@ -863,7 +859,6 @@ $.fn.hidePanel = function(){
         if (data.get(myDate) != undefined)
             return data.get(myDate).available;
         else {
-            console.warn("Date specified does not exist in data")
             return defaultData.available;
         }
     }
@@ -872,7 +867,6 @@ $.fn.hidePanel = function(){
         if (data.get(myDate) != undefined)
             return data.get(myDate).adminNotes;
         else{
-            console.warn("Date specified does not exist in data")
             return defaultData.adminNotes;
         }
     }
@@ -881,7 +875,6 @@ $.fn.hidePanel = function(){
         if (data.get(myDate) != undefined)
             return data.get(myDate).memberNotes;
         else{
-            console.warn("Date specified does not exist in data")
             return defaultData.memberNotes;
         }
     }

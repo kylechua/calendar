@@ -46,7 +46,7 @@
 
 <b>$.get{Value}(myDate)</b>
 
-    Returns the value of [Price, Blocked, Locked, Available, Booked, AdminNotes, MemberNotes] for the given date in ISO format
+    Returns the value of [Price, Blocked, Locked, Available, Booked, AdminNotes, MemberNotes] for the given date in ISO format. If date does not exist in data, returns default
 
 <b>$.set{Value}(myDate, newValue)</b>
     
